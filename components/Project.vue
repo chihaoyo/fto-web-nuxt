@@ -27,5 +27,17 @@ export default {
   > .description {
     font-size: 0.875rem;
   }
+  > .contributors {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    > ul {
+      padding-left: 1.25rem;
+    }
+  }
+  > .links {
+    > ul {
+      padding-left: 1.25rem;
+    }
+  }
 }
 </style>
