@@ -48,5 +48,8 @@ export default {
     defaultLocale: locales[0].code
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  generate: {
+    dir: 'docs'
+  }
 }
