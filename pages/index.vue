@@ -50,15 +50,18 @@ export default {
 </script>
 
 <style lang="scss">
+.page.index {
+  background-color: var(--fto-grey-light);
+}
 .cards {
+  padding-bottom: 3rem;
   > .card {
     &.people {
       display: flex;
       flex-wrap: wrap;
-      margin: 1rem;
+      margin: 0.5rem;
       > .person {
         margin: 1rem;
-        flex-basis: 8rem;
       }
     }
   }

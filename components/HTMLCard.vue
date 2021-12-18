@@ -13,6 +13,7 @@ export default {
 
 <style lang="scss">
 .html {
+  max-width: 60rem;
   padding: 2rem;
   > .content {
     > p {

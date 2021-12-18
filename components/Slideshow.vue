@@ -1,7 +1,7 @@
 <template>
 <div class="slideshow">
   <div class="slide">
-    <img class="image" :src="currentSlide.image" />
+    <div class="image" :style="{ backgroundImage: `url('${currentSlide.image}')` }"></div>
     <div class="description" v-html="currentSlide.description[loc]"></div>
   </div>
 </div>
@@ -13,7 +13,7 @@ export default {
   mixins: [isCard],
   data() {
     return {
-      timeInterval: 2000,
+      timeInterval: 5000,
       slideIndex: 0
     }
   },
@@ -37,13 +37,19 @@ export default {
   flex-wrap: nowrap;
   overflow-x: auto;
   > .slide {
-    min-width: 100%;
+    min-width: calc(100% - 3rem);
+    margin: 1.5rem;
     > .image {
       display: block;
       width: 100%;
+      aspect-ratio: 2;
+      background-color: var(--fto-light-grey);
+      background-size: cover;
+      background-position: center center;
+      border-radius: 1.5rem;
     }
     > .description {
-      padding: 0.5rem;
+      padding: 0.5rem 0;
       font-size: 0.75rem;
       color: var(--fto-blue);
     }

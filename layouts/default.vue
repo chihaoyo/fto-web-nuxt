@@ -18,6 +18,9 @@ export default {
 <style lang="scss">
 :root {
   --fto-blue: #404ADD;
+  --fto-blue-light: #CCCFFF;
+  --fto-orange: #FFB13B;
+  --fto-grey-light: #DFDFDF;
 }
 
 html, body {

@@ -16,7 +16,11 @@ export default {
 
 <style lang="scss">
 .project {
+  max-width: 30rem;
+  margin: 1.5rem;
   padding: 2rem;
+  background-color: white;
+  border-radius: 1.5rem;
   > :not(:last-child) {
     margin-bottom: 1rem;
   }
@@ -28,8 +32,6 @@ export default {
     font-size: 0.875rem;
   }
   > .contributors {
-    text-decoration: underline;
-    text-decoration-thickness: 2px;
     > ul {
       padding-left: 1.25rem;
     }

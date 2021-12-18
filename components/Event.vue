@@ -18,10 +18,17 @@ export default {
 
 <style lang="scss">
 .event {
+  max-width: 30rem;
+  margin: 1.5rem;
   padding: 2rem;
+  background-color: white;
+  border-radius: 1.5rem;
   > .title {
     text-decoration: underline;
     text-decoration-thickness: 2px;
+  }
+  > .date {
+    font-size: 1.5rem;
   }
 }
 </style>
